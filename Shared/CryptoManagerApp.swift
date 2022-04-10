@@ -9,12 +9,17 @@ import SwiftUI
 
 @main
 struct CryptoManagerApp: App {
+    
+    @StateObject private var vm = HomeViewModel()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
                 HomeView()
                     .navigationBarHidden(true)
             }
+            // Теперь всё, что находится внутри NavigationViewимеет доступ к объекту "vm", то есть к нашей ViewModel
+            .environmentObject(vm)
         }
     }
 }
