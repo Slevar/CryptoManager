@@ -10,7 +10,7 @@ import Combine
 
 class CoinDataService {
     
-    // Реактивный формат, создадим массив паблишера, на которого в последствии можно подписаться
+    // Реактивный формат, создадим массив паблишера, на которого впоследствии можно подписаться
     @Published var allCoins: [CoinModel] = []
     
     var coinSubscribtions: AnyCancellable?

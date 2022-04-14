@@ -10,16 +10,23 @@ import SwiftUI
 struct HomeView: View {
     
     @EnvironmentObject private var vm: HomeViewModel
-    @State private var showPortfolio: Bool = true
+    @State private var showPortfolio: Bool = false // Ответственнен за состояние правой кнопки
+    @State private var showPortfolioView: Bool = false // Отвечает за отображение портфолио при нажатии на кнопку перехода
     
     var body: some View {
         // background layer
         ZStack {
-            Color.theme.backgroundColor.ignoresSafeArea()
-            
+            Color.theme.backgroundColor
+                .ignoresSafeArea()
+                .sheet(isPresented: $showPortfolioView, content: {
+                    PortfolioView()
+                        .environmentObject(vm)
+                })
             // content layer
             VStack {
                 homeHeader
+                HomeStatsView(showPortfolio: $showPortfolio)
+                SearchBarView(searchText: $vm.searchText)
                 
                 columnTitle
                 
@@ -29,7 +36,7 @@ struct HomeView: View {
                     // .transition Анимация при переходе к своему портфелю (направление смещения контента)
                 }
                 if showPortfolio {
-                    allCoinsPortfolio
+                    portfolioCoinsList
                         .transition(.move(edge: .trailing))
                 }
                 Spacer(minLength: 0)
@@ -44,15 +51,22 @@ struct HomeView_Previews: PreviewProvider {
             HomeView()
                 .navigationBarHidden(true)
         }
+        .preferredColorScheme(.dark)
         .environmentObject(dev.homeVM)
     }
 }
 
 extension HomeView {
+    
     private var homeHeader: some View {
         HStack {
             CircleButtonView(iconName: showPortfolio ? "plus" : "info")
-                .animation(.none)
+                .animation(.none, value: 0)
+                .onTapGesture {
+                    if showPortfolio {
+                        showPortfolioView.toggle()
+                    }
+                }
                 .background(
                     CircleButtonAnimationView(animate: $showPortfolio)
                 )
@@ -85,9 +99,9 @@ extension HomeView {
         .listStyle(PlainListStyle())
     }
     
-    private var allCoinsPortfolio: some View {
+    private var portfolioCoinsList: some View {
         List {
-            ForEach(vm.allCoins) { coin in
+            ForEach(vm.portfolioCoins) { coin in
                 CoinRowView(coin: coin, showHoldingsColumn: true)
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
             } // ForEach
