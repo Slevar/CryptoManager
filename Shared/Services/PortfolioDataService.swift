@@ -30,7 +30,7 @@ class PortfolioDataService {
     // MARK - Public
     
     func updatePortfolio(coin: CoinModel, amount: Double) {
-        // check if cion is already in portfolio
+        // check if coin is already in portfolio
         if let entity = savedEntyties.first(where: { $0.coinID == coin.id }) {
             if amount > 0 {
                 update(entity: entity, amount: amount)

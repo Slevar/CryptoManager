@@ -47,4 +47,9 @@ class NetworkingManager {
         case.failure(let error) : print(error.localizedDescription)
         }
     }
+    
+    
+//    static func downloadWithAlamofire(url: URL) -> AnyPublisher<Data, Error> {
+//        return 
+//    }
 }

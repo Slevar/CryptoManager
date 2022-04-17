@@ -22,6 +22,9 @@ struct CoinRowView: View {
             rightColumn
         } // HStack
         .font(.subheadline)
+        .background(
+            Color.theme.backgroundColor .opacity(0.0001)
+        )
     }
 }
 

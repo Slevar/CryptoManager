@@ -15,7 +15,6 @@ class CoinDataService {
     
     var coinSubscribtions: AnyCancellable?
     
-    // Дабы снаружи не давать возможность вызывать метод getCoins(), работаем опосредованно через инициализатор
     init() {
         getCoins()
     }
