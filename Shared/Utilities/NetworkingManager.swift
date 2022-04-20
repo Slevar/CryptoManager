@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import Alamofire
 
 class NetworkingManager {
     
@@ -50,6 +51,7 @@ class NetworkingManager {
     
     
 //    static func downloadWithAlamofire(url: URL) -> AnyPublisher<Data, Error> {
-//        return 
+//        return AF.request(url: URL)
+//        
 //    }
 }

@@ -29,7 +29,6 @@ struct LazyVGridView: View {
                         .onTapGesture {
                             selectedCoin = coin
                         }
-                    
                 }
             }
             .padding(.vertical, 4)

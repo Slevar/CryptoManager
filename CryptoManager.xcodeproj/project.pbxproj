@@ -27,12 +27,16 @@
 		CA2CD9D92809C399006F99AB /* CoinDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2CD9D82809C399006F99AB /* CoinDetailModel.swift */; };
 		CA2CD9DB2809C70D006F99AB /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2CD9DA2809C70D006F99AB /* DetailViewModel.swift */; };
 		CA2CD9DD2809C786006F99AB /* CoinDetailDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2CD9DC2809C786006F99AB /* CoinDetailDataService.swift */; };
+		CA449FCF280C22C6009E5AF4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CA449FCE280C22C6009E5AF4 /* Alamofire */; };
 		CA5007C52800775300C39485 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5007C42800775300C39485 /* CircleButtonView.swift */; };
 		CA5007C7280080F600C39485 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5007C6280080F600C39485 /* CircleButtonAnimationView.swift */; };
 		CA5007CA2800863100C39485 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5007C92800863100C39485 /* CoinModel.swift */; };
+		CA72DF72281036E5006E0F0A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA72DF71281036E5006E0F0A /* String.swift */; };
 		CA75A4E0280474AC00FEDB30 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75A4DF280474AC00FEDB30 /* PortfolioView.swift */; };
 		CA75A4E22804797C00FEDB30 /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75A4E12804797C00FEDB30 /* XMarkButton.swift */; };
 		CA75A4E4280481A900FEDB30 /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75A4E3280481A900FEDB30 /* CoinLogoView.swift */; };
+		CA9D2A8F280F048500ED0EC6 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9D2A8E280F048500ED0EC6 /* ChartView.swift */; };
+		CA9D2A91280F1EF900ED0EC6 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9D2A90280F1EF900ED0EC6 /* Date.swift */; };
 		CAA0F9C92801F2C100DF8471 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA0F9C82801F2C100DF8471 /* HomeViewModel.swift */; };
 		CAA0F9CC2802051D00DF8471 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA0F9CB2802051D00DF8471 /* CoinDataService.swift */; };
 		CAA0F9CF2802120D00DF8471 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA0F9CE2802120D00DF8471 /* NetworkingManager.swift */; };
@@ -71,9 +75,12 @@
 		CA5007C42800775300C39485 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		CA5007C6280080F600C39485 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		CA5007C92800863100C39485 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		CA72DF71281036E5006E0F0A /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		CA75A4DF280474AC00FEDB30 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		CA75A4E12804797C00FEDB30 /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
 		CA75A4E3280481A900FEDB30 /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
+		CA9D2A8E280F048500ED0EC6 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		CA9D2A90280F1EF900ED0EC6 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		CAA0F9C82801F2C100DF8471 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CAA0F9CB2802051D00DF8471 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		CAA0F9CE2802120D00DF8471 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
@@ -91,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA449FCF280C22C6009E5AF4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +170,8 @@
 				CAF721432801D8C300DD77F6 /* Double.swift */,
 				CA07D4DF28031016001C5233 /* UIApplication.swift */,
 				CA75A4E12804797C00FEDB30 /* XMarkButton.swift */,
+				CA9D2A90280F1EF900ED0EC6 /* Date.swift */,
+				CA72DF71281036E5006E0F0A /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -218,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				CA2CD9D62809A2B7006F99AB /* DetailView.swift */,
+				CA9D2A8E280F048500ED0EC6 /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -300,6 +311,9 @@
 			dependencies = (
 			);
 			name = "CryptoManager (iOS)";
+			packageProductDependencies = (
+				CA449FCE280C22C6009E5AF4 /* Alamofire */,
+			);
 			productName = "CryptoManager (iOS)";
 			productReference = CA23553B28004319007F80AF /* CryptoManager.app */;
 			productType = "com.apple.product-type.application";
@@ -348,6 +362,9 @@
 				Base,
 			);
 			mainGroup = CA23552E28004316007F80AF;
+			packageReferences = (
+				CA449FCD280C22C6009E5AF4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = CA23553C28004319007F80AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -384,9 +401,11 @@
 				CADDC13C280823360027592F /* PortfolioContainer.xcdatamodeld in Sources */,
 				CA07D4E028031016001C5233 /* UIApplication.swift in Sources */,
 				CA07D4EC2803711B001C5233 /* MarketDataService.swift in Sources */,
+				CA9D2A8F280F048500ED0EC6 /* ChartView.swift in Sources */,
 				CA75A4E4280481A900FEDB30 /* CoinLogoView.swift in Sources */,
 				CA07D4E428034A31001C5233 /* StatisticView.swift in Sources */,
 				CA07D4DA2802D0ED001C5233 /* CoinImageViewModel.swift in Sources */,
+				CA9D2A91280F1EF900ED0EC6 /* Date.swift in Sources */,
 				CA07D4D62802C8B9001C5233 /* CoinImageView.swift in Sources */,
 				CA23555C28004AFF007F80AF /* HomeView.swift in Sources */,
 				CA23554428004319007F80AF /* CryptoManagerApp.swift in Sources */,
@@ -406,6 +425,7 @@
 				CAF721442801D8C300DD77F6 /* Double.swift in Sources */,
 				CAA0F9CF2802120D00DF8471 /* NetworkingManager.swift in Sources */,
 				CA5007CA2800863100C39485 /* CoinModel.swift in Sources */,
+				CA72DF72281036E5006E0F0A /* String.swift in Sources */,
 				CA75A4E22804797C00FEDB30 /* XMarkButton.swift in Sources */,
 				CA07D4D82802CB6C001C5233 /* CoinImageService.swift in Sources */,
 				CACC23852805E8A60056A20F /* LazyVGridView.swift in Sources */,
@@ -690,6 +710,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA449FCD280C22C6009E5AF4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA449FCE280C22C6009E5AF4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA449FCD280C22C6009E5AF4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CADDC13A280823360027592F /* PortfolioContainer.xcdatamodeld */ = {
