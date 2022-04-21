@@ -18,7 +18,7 @@ struct CryptoManagerApp: App {
                 HomeView()
                     .navigationBarHidden(true)
             }
-            // Теперь всё, что находится внутри NavigationViewимеет доступ к объекту "vm", то есть к нашей ViewModel
+            // Теперь всё, что находится внутри NavigationView имеет доступ к объекту "vm", то есть к нашей ViewModel
             .environmentObject(vm)
         }
     }

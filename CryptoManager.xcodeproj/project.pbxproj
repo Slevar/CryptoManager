@@ -35,6 +35,8 @@
 		CA75A4E0280474AC00FEDB30 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75A4DF280474AC00FEDB30 /* PortfolioView.swift */; };
 		CA75A4E22804797C00FEDB30 /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75A4E12804797C00FEDB30 /* XMarkButton.swift */; };
 		CA75A4E4280481A900FEDB30 /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75A4E3280481A900FEDB30 /* CoinLogoView.swift */; };
+		CA8BB9F028116674002C07E7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BB9EF28116674002C07E7 /* SettingsView.swift */; };
+		CA8BB9F428116CD7002C07E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8BB9F328116CD6002C07E7 /* LaunchScreen.storyboard */; };
 		CA9D2A8F280F048500ED0EC6 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9D2A8E280F048500ED0EC6 /* ChartView.swift */; };
 		CA9D2A91280F1EF900ED0EC6 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9D2A90280F1EF900ED0EC6 /* Date.swift */; };
 		CAA0F9C92801F2C100DF8471 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA0F9C82801F2C100DF8471 /* HomeViewModel.swift */; };
@@ -79,6 +81,8 @@
 		CA75A4DF280474AC00FEDB30 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		CA75A4E12804797C00FEDB30 /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
 		CA75A4E3280481A900FEDB30 /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
+		CA8BB9EF28116674002C07E7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CA8BB9F328116CD6002C07E7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA9D2A8E280F048500ED0EC6 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		CA9D2A90280F1EF900ED0EC6 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		CAA0F9C82801F2C100DF8471 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -180,8 +184,10 @@
 			isa = PBXGroup;
 			children = (
 				CA5007C2280076F800C39485 /* Components */,
+				CA8BB9F128116CAB002C07E7 /* Launch */,
 				CA23555828004AC0007F80AF /* Home */,
 				CA2CD9D32809A223006F99AB /* Detail */,
+				CA72DF73281044A6006E0F0A /* Settings */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -271,6 +277,38 @@
 				CADDC13A280823360027592F /* PortfolioContainer.xcdatamodeld */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CA72DF73281044A6006E0F0A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CA72DF74281044B0006E0F0A /* Settings */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CA72DF74281044B0006E0F0A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CA8BB9EF28116674002C07E7 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CA8BB9F128116CAB002C07E7 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				CA8BB9F228116CBB002C07E7 /* Views */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		CA8BB9F228116CBB002C07E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA8BB9F328116CD6002C07E7 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		CAA0F9CA2802050300DF8471 /* Services */ = {
@@ -381,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA23555328004893007F80AF /* Assets.xcassets in Resources */,
+				CA8BB9F428116CD7002C07E7 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +474,7 @@
 				CA2CD9DD2809C786006F99AB /* CoinDetailDataService.swift in Sources */,
 				CA2CD9DB2809C70D006F99AB /* DetailViewModel.swift in Sources */,
 				CADDC13E280835080027592F /* PortfolioDataService.swift in Sources */,
+				CA8BB9F028116674002C07E7 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,7 +612,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -603,7 +643,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
